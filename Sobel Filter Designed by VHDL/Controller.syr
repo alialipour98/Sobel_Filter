@@ -1,0 +1,631 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Controller.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Controller"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : Controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\User\Documents\Sobel_Filter\Memory_Write.vhd" into library work
+Parsing entity <Memory_Write>.
+Parsing architecture <Behavioral> of entity <memory_write>.
+Parsing VHDL file "C:\Users\User\Documents\Sobel_Filter\Memory_Read.vhd" into library work
+Parsing entity <Memory_Read>.
+Parsing architecture <Behavioral> of entity <memory_read>.
+Parsing VHDL file "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" into library work
+Parsing entity <Controller>.
+Parsing architecture <Behavioral> of entity <controller>.
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 118: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 121: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 124: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 127: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 130: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 133: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 136: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 139: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 142: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 145: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 116: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 157: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 169: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 190: Case choice must be a locally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Controller> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Memory_Read> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Memory_Write> (architecture <Behavioral>) with generics from library <work>.
+WARNING:Xst:2972 - "C:\Users\User\Documents\Sobel_Filter\Controller.vhd" line 229. All outputs of instance <Memory_Write> of block <Memory_Write> are unconnected in block <Controller>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Controller>.
+    Related source file is "C:\Users\User\Documents\Sobel_Filter\Controller.vhd".
+        count0 = ('0','0','0','0')
+        count1 = ('0','0','0','1')
+        count2 = ('0','0','1','0')
+        count3 = ('0','0','1','1')
+        count4 = ('0','1','0','0')
+        count5 = ('0','1','0','1')
+        count6 = ('0','1','1','0')
+        count7 = ('0','1','1','1')
+        count8 = ('1','0','0','0')
+        count9 = ('1','0','0','1')
+        State0 = ('0','0','0','0')
+        State1 = ('0','0','0','1')
+        State2 = ('0','0','1','0')
+        State3 = ('0','0','1','1')
+        State4 = ('0','1','0','0')
+    Found 1-bit register for signal <go_Int>.
+    Found 1-bit register for signal <readEn_Int>.
+    Found 1-bit register for signal <done_Int>.
+    Found 4-bit register for signal <State>.
+    Found 16-bit register for signal <Cal_Gx>.
+    Found 16-bit register for signal <Cal_Gy>.
+    Found 16-bit register for signal <dinAddr_Int>.
+    Found 8-bit register for signal <row_count>.
+    Found 16-bit register for signal <refAddr>.
+    Found 4-bit register for signal <cnt>.
+    Found 9-bit register for signal <Register_Res<0>>.
+    Found 9-bit register for signal <Register_Res<1>>.
+    Found 9-bit register for signal <Register_Res<2>>.
+    Found 9-bit register for signal <Register_Res<3>>.
+    Found 9-bit register for signal <Register_Res<4>>.
+    Found 9-bit register for signal <Register_Res<5>>.
+    Found 9-bit register for signal <Register_Res<6>>.
+    Found 9-bit register for signal <Register_Res<7>>.
+    Found 9-bit register for signal <Register_Res<8>>.
+    Found 8-bit register for signal <dout_Int>.
+    Found 1-bit register for signal <writeEn_Int>.
+    Found 16-bit register for signal <doutAddr_Int>.
+    Found 1-bit register for signal <rst_Int>.
+    Found finite state machine <FSM_0> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 19                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 2                                              |
+    | Clock              | Clock (rising_edge)                            |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit subtractor for signal <Register_Res[2][8]_unary_minus_29_OUT> created at line 172.
+    Found 10-bit subtractor for signal <Register_Res[5][8]_unary_minus_33_OUT> created at line 175.
+    Found 10-bit subtractor for signal <Register_Res[8][8]_unary_minus_37_OUT> created at line 178.
+    Found 10-bit subtractor for signal <Register_Res[6][8]_unary_minus_44_OUT> created at line 186.
+    Found 10-bit subtractor for signal <Register_Res[7][8]_unary_minus_46_OUT> created at line 187.
+    Found 16-bit adder for signal <refAddr[15]_GND_4_o_add_7_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_4_o_add_8_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_4_o_add_9_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_4_o_add_10_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_4_o_add_11_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_4_o_add_12_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_4_o_add_13_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_4_o_add_14_OUT> created at line 1241.
+    Found 8-bit adder for signal <row_count[7]_GND_4_o_add_15_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_4_o_add_18_OUT> created at line 1241.
+    Found 4-bit adder for signal <cnt[3]_GND_4_o_add_26_OUT> created at line 1241.
+    Found 16-bit adder for signal <doutAddr_Int[15]_GND_4_o_add_87_OUT> created at line 1241.
+    Found 16-bit adder for signal <_n0370> created at line 71.
+    Found 16-bit adder for signal <_n0371> created at line 71.
+    Found 16-bit adder for signal <Cal_Res> created at line 71.
+    Found 16-bit adder for signal <_n0373> created at line 180.
+    Found 16-bit adder for signal <_n0374> created at line 180.
+    Found 16-bit adder for signal <_n0375> created at line 180.
+    Found 16-bit adder for signal <_n0376> created at line 180.
+    Found 16-bit adder for signal <Register_Res[0][8]_Register_Res[8][8]_add_48_OUT> created at line 180.
+    Found 16-bit adder for signal <_n0378> created at line 170.
+    Found 16-bit adder for signal <_n0379> created at line 170.
+    Found 16-bit adder for signal <_n0380> created at line 170.
+    Found 16-bit adder for signal <_n0381> created at line 170.
+    Found 16-bit adder for signal <Register_Res[0][8]_Register_Res[8][8]_add_37_OUT> created at line 170.
+    Found 16-bit comparator greater for signal <Cal_Res[15]_GND_4_o_LessThan_50_o> created at line 192
+    Summary:
+	inferred  23 Adder/Subtractor(s).
+	inferred 186 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  20 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Controller> synthesized.
+
+Synthesizing Unit <Memory_Read>.
+    Related source file is "C:\Users\User\Documents\Sobel_Filter\Memory_Read.vhd".
+        Mem_Addr = 16
+        Mem_Width = 8
+    Set property "ram_style = Block" for signal <ram_hex>.
+WARNING:Xst:2999 - Signal 'ram_hex', unconnected in block 'Memory_Read', is tied to its initial value.
+    Found 65536x8-bit single-port Read Only RAM <Mram_ram_hex> for signal <ram_hex>.
+    Found 16-bit register for signal <Address_Int>.
+    Found 8-bit register for signal <data_out_Int>.
+    Found 1-bit register for signal <readEn_Int>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  25 D-type flip-flop(s).
+Unit <Memory_Read> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 65536x8-bit single-port Read Only RAM                 : 1
+# Adders/Subtractors                                   : 23
+ 10-bit subtractor                                     : 5
+ 16-bit adder                                          : 16
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 25
+ 1-bit register                                        : 6
+ 16-bit register                                       : 6
+ 4-bit register                                        : 1
+ 8-bit register                                        : 3
+ 9-bit register                                        : 9
+# Comparators                                          : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 20
+ 1-bit 2-to-1 multiplexer                              : 4
+ 16-bit 2-to-1 multiplexer                             : 13
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+# Xors                                                 : 30
+ 1-bit xor2                                            : 30
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <Register_Res_8_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_7_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_6_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_5_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_4_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_3_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_2_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_1_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_0_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Controller>.
+The following registers are absorbed into accumulator <refAddr>: 1 register on signal <refAddr>.
+The following registers are absorbed into counter <row_count>: 1 register on signal <row_count>.
+The following registers are absorbed into counter <doutAddr_Int>: 1 register on signal <doutAddr_Int>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+INFO:Xst:3226 - The RAM <Memory_Read/Mram_ram_hex> will be implemented as a BLOCK RAM, absorbing the following register(s): <Memory_Read/data_out_Int>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65536-word x 8-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clock>         | rise     |
+    |     enA            | connected to signal <Memory_Read/readEn_Int> | high     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Memory_Read/Address_Int> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <din_Int>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+	The following adders/subtractors are grouped into adder tree <Madd_Register_Res[0][8]_Register_Res[8][8]_add_48_OUT1> :
+ 	<Madd__n0373> in block <Controller>, 	<Madd__n0376> in block <Controller>, 	<Madd__n0374> in block <Controller>, 	<Madd__n0375> in block <Controller>.
+	The following adders/subtractors are grouped into adder tree <Madd_Register_Res[0][8]_Register_Res[8][8]_add_37_OUT1> :
+ 	<Madd__n0378> in block <Controller>, 	<Madd__n0381> in block <Controller>, 	<Madd__n0379> in block <Controller>, 	<Madd__n0380> in block <Controller>.
+Unit <Controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 65536x8-bit single-port block Read Only RAM           : 1
+# Adders/Subtractors                                   : 8
+ 10-bit subtractor                                     : 5
+ 16-bit adder                                          : 2
+ 16-bit adder carry in                                 : 1
+# Adder Trees                                          : 2
+ 16-bit / 6-inputs adder tree                          : 2
+# Counters                                             : 3
+ 16-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 16-bit up accumulator                                 : 1
+# Registers                                            : 159
+ Flip-Flops                                            : 159
+# Comparators                                          : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 18
+ 1-bit 2-to-1 multiplexer                              : 4
+ 16-bit 2-to-1 multiplexer                             : 13
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 30
+ 1-bit xor2                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <Register_Res_8_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_7_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_6_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_5_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_4_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_3_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_2_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_1_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_0_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <State[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 00
+ 0001  | 01
+ 0010  | 10
+ 0011  | 11
+-------------------
+
+Optimizing unit <Controller> ...
+INFO:Xst:2261 - The FF/Latch <row_count_0> in Unit <Controller> is equivalent to the following FF/Latch, which will be removed : <refAddr_0> 
+INFO:Xst:2261 - The FF/Latch <row_count_1> in Unit <Controller> is equivalent to the following FF/Latch, which will be removed : <refAddr_1> 
+INFO:Xst:2261 - The FF/Latch <row_count_2> in Unit <Controller> is equivalent to the following FF/Latch, which will be removed : <refAddr_2> 
+INFO:Xst:2261 - The FF/Latch <row_count_3> in Unit <Controller> is equivalent to the following FF/Latch, which will be removed : <refAddr_3> 
+INFO:Xst:2261 - The FF/Latch <row_count_4> in Unit <Controller> is equivalent to the following FF/Latch, which will be removed : <refAddr_4> 
+INFO:Xst:2261 - The FF/Latch <row_count_5> in Unit <Controller> is equivalent to the following FF/Latch, which will be removed : <refAddr_5> 
+INFO:Xst:2261 - The FF/Latch <row_count_6> in Unit <Controller> is equivalent to the following FF/Latch, which will be removed : <refAddr_6> 
+INFO:Xst:2261 - The FF/Latch <row_count_7> in Unit <Controller> is equivalent to the following FF/Latch, which will be removed : <refAddr_7> 
+INFO:Xst:2261 - The FF/Latch <Cal_Gy_10> in Unit <Controller> is equivalent to the following 5 FFs/Latches, which will be removed : <Cal_Gy_11> <Cal_Gy_12> <Cal_Gy_13> <Cal_Gy_14> <Cal_Gy_15> 
+INFO:Xst:2261 - The FF/Latch <Cal_Gy_0> in Unit <Controller> is equivalent to the following FF/Latch, which will be removed : <Cal_Gx_0> 
+INFO:Xst:2261 - The FF/Latch <Cal_Gx_10> in Unit <Controller> is equivalent to the following 5 FFs/Latches, which will be removed : <Cal_Gx_11> <Cal_Gx_12> <Cal_Gx_13> <Cal_Gx_14> <Cal_Gx_15> 
+INFO:Xst:3203 - The FF/Latch <writeEn_Int> in Unit <Controller> is the opposite to the following FF/Latch, which will be removed : <readEn_Int> 
+
+Mapping all equations...
+WARNING:Xst:2677 - Node <go_Int> of sequential type is unconnected in block <Controller>.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Controller, actual ratio is 7.
+
+Final Macro Processing ...
+
+Processing Unit <Controller> :
+	Found 2-bit shift register for signal <Register_Res_3_0>.
+	Found 2-bit shift register for signal <Register_Res_3_1>.
+	Found 2-bit shift register for signal <Register_Res_3_2>.
+	Found 2-bit shift register for signal <Register_Res_3_3>.
+	Found 2-bit shift register for signal <Register_Res_3_4>.
+	Found 2-bit shift register for signal <Register_Res_3_5>.
+	Found 2-bit shift register for signal <Register_Res_3_6>.
+	Found 2-bit shift register for signal <Register_Res_3_7>.
+Unit <Controller> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 161
+ Flip-Flops                                            : 161
+# Shift Registers                                      : 8
+ 2-bit shift register                                  : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Controller.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 588
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 44
+#      LUT2                        : 85
+#      LUT3                        : 114
+#      LUT4                        : 40
+#      LUT5                        : 11
+#      LUT6                        : 34
+#      MUXCY                       : 127
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 169
+#      FD                          : 22
+#      FDE                         : 147
+# RAMS                             : 32
+#      RAMB16BWER                  : 32
+# Shift Registers                  : 8
+#      SRLC16E                     : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 44
+#      IBUF                        : 1
+#      OBUF                        : 43
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             169  out of  11440     1%  
+ Number of Slice LUTs:                  339  out of   5720     5%  
+    Number used as Logic:               331  out of   5720     5%  
+    Number used as Memory:                8  out of   1440     0%  
+       Number used as SRL:                8
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    393
+   Number with an unused Flip Flop:     224  out of    393    56%  
+   Number with an unused LUT:            54  out of    393    13%  
+   Number of fully used LUT-FF pairs:   115  out of    393    29%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          46
+ Number of bonded IOBs:                  45  out of    102    44%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               32  out of     32   100%  
+    Number using Block RAM only:         32
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 209   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 8.097ns (Maximum Frequency: 123.503MHz)
+   Minimum input arrival time before clock: 2.083ns
+   Maximum output required time after clock: 6.428ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 8.097ns (frequency: 123.503MHz)
+  Total number of paths / destination ports: 32061 / 811
+-------------------------------------------------------------------------
+Delay:               8.097ns (Levels of Logic = 9)
+  Source:            Register_Res_2_4 (FF)
+  Destination:       Cal_Gx_10 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: Register_Res_2_4 to Cal_Gx_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.525   1.306  Register_Res_2_4 (Register_Res_2_4)
+     LUT6:I1->O            3   0.254   0.766  Msub_Register_Res[2][8]_unary_minus_29_OUT_cy<5>11 (Msub_Register_Res[2][8]_unary_minus_29_OUT_cy<5>)
+     LUT3:I2->O           16   0.254   1.290  Register_Res[2][8]_unary_minus_29_OUT<8>1 (Register_Res[2][8]_unary_minus_29_OUT<8>)
+     LUT2:I0->O            1   0.250   0.682  ADDERTREE_INTERNAL_Madd68 (ADDERTREE_INTERNAL_Madd68)
+     LUT3:I2->O            1   0.254   0.000  ADDERTREE_INTERNAL_Madd6_lut<0>9 (ADDERTREE_INTERNAL_Madd6_lut<0>9)
+     MUXCY:S->O            0   0.215   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_8 (ADDERTREE_INTERNAL_Madd6_cy<0>9)
+     XORCY:CI->O           1   0.206   0.682  ADDERTREE_INTERNAL_Madd6_xor<0>_9 (ADDERTREE_INTERNAL_Madd_106)
+     LUT2:I1->O            0   0.254   0.000  ADDERTREE_INTERNAL_Madd9_lut<10> (ADDERTREE_INTERNAL_Madd9_lut<10>)
+     XORCY:LI->O           1   0.149   0.682  ADDERTREE_INTERNAL_Madd9_xor<10> (ADDERTREE_INTERNAL_Madd_109)
+     LUT3:I2->O            1   0.254   0.000  Mmux_State[3]_GND_4_o_wide_mux_65_OUT21 (State[3]_GND_4_o_wide_mux_65_OUT<10>)
+     FDE:D                     0.074          Cal_Gx_10
+    ----------------------------------------
+    Total                      8.097ns (2.689ns logic, 5.408ns route)
+                                       (33.2% logic, 66.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.083ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       rst_Int (FF)
+  Destination Clock: Clock rising
+
+  Data Path: rst to rst_Int
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_IBUF (rst_IBUF)
+     FD:D                      0.074          rst_Int
+    ----------------------------------------
+    Total                      2.083ns (1.402ns logic, 0.681ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 43 / 43
+-------------------------------------------------------------------------
+Offset:              6.428ns (Levels of Logic = 2)
+  Source:            writeEn_Int (FF)
+  Destination:       readEn (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: writeEn_Int to readEn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              24   0.525   1.379  writeEn_Int (writeEn_Int)
+     INV:I->O             23   0.255   1.357  writeEn_inv1_INV_0 (readEn_OBUF)
+     OBUF:I->O                 2.912          readEn_OBUF (readEn)
+    ----------------------------------------
+    Total                      6.428ns (3.692ns logic, 2.736ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    8.097|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 28.23 secs
+ 
+--> 
+
+Total memory usage is 4615884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

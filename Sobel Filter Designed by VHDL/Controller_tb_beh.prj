@@ -1,0 +1,4 @@
+vhdl work "Memory_Write.vhd"
+vhdl work "Memory_Read.vhd"
+vhdl work "Controller.vhd"
+vhdl work "Controller_tb.vhd"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/User/Documents/Sobel_Filter/Controller_tb_isim_beh.exe" -prj "C:/Users/User/Documents/Sobel_Filter/Controller_tb_beh.prj" "work.Controller_tb" 

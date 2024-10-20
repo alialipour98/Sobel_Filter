@@ -1,0 +1,4 @@
+vhdl isim_temp "Memory_Write.vhd"
+vhdl isim_temp "Memory_Read.vhd"
+vhdl isim_temp "Controller.vhd"
+vhdl isim_temp "Controller_tb.vhd"

@@ -1,0 +1,2 @@
+vhdl isim_temp "Memory_Read.vhd"
+vhdl isim_temp "Read_Only_tb.vhd"

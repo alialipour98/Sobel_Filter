@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 118: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 121: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 124: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 127: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 130: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 133: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 136: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 139: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 142: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 145: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 116: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 157: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 169: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="old" >"C:\Users\User\Documents\Sobel_Filter\Controller.vhd" Line 190: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\Sobel_Filter\Controller.vhd</arg>&quot; line <arg fmt="%d" index="2">229</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Memory_Write</arg>&gt; of block &lt;<arg fmt="%s" index="4">Memory_Write</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Controller</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">ram_hex</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">Memory_Read</arg>&apos;, is tied to its initial value.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_8_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_7_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_6_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_5_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_4_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_3_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_2_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_1_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_0_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Memory_Read/Mram_ram_hex</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_8_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_7_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_6_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_5_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_4_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_3_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_2_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_1_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Register_Res_0_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">row_count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;refAddr_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">row_count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;refAddr_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">row_count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;refAddr_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">row_count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;refAddr_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">row_count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;refAddr_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">row_count_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;refAddr_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">row_count_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;refAddr_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">row_count_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;refAddr_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Cal_Gy_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Cal_Gy_11&gt; &lt;Cal_Gy_12&gt; &lt;Cal_Gy_13&gt; &lt;Cal_Gy_14&gt; &lt;Cal_Gy_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Cal_Gy_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Cal_Gx_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Cal_Gx_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Cal_Gx_11&gt; &lt;Cal_Gx_12&gt; &lt;Cal_Gx_13&gt; &lt;Cal_Gx_14&gt; &lt;Cal_Gx_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">writeEn_Int</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Controller</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;readEn_Int&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">go_Int</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Controller</arg>&gt;.
+</msg>
+
+</messages>

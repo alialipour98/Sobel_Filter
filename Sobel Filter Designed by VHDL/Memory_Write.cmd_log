@@ -1,0 +1,1 @@
+vhdtdtfi -prj Sobel_Filter -o C:/Users/User/Documents/ISE_Project/Sobel_Filter/Memory_Write.vhi -module Memory_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Memory_Write.vhd 
